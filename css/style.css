@@ -3,6 +3,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+#app{
+    width: 200px;
+    margin: auto;
+}
 
 .loading{
     display: flex;

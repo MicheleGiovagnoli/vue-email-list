@@ -12,7 +12,7 @@
     <div id="app">
         <div v-show="message.length < 10" class="loading">
             <h1>Caricamento...</h1>
-            <i class="fa-solid fa-spinner fa-spin"></i>
+            <i class="fa-solid fa-spinner"></i>
         </div>
         <ul v-if="message.length == 10">
             <li v-for="(element, index) in message">{{message[index]}}</li>

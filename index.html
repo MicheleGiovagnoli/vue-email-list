@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Email List</title>
 </head>
 <body>
     <div id="app">
-        <div v-show="message.length < 10">
-            Caricamento...
+        <div v-show="message.length < 10" class="loading">
+            <h1>Caricamento...</h1>
+            <i class="fa-solid fa-spinner fa-spin"></i>
         </div>
         <ul v-if="message.length == 10">
             <li v-for="(element, index) in message">{{message[index]}}</li>

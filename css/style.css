@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+}
+.loading i{
+    font-size: 40px;
+
+}

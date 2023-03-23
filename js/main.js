@@ -7,6 +7,11 @@ const { createApp } = Vue
       }
     },
     methods:{
+        stampaInsieme (){
+            for(let i = 0; 1< this.message.length; i++){
+                
+            }
+        }
     },
     mounted() {
             for(let i = 0; i < 10; i++){
